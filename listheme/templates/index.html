@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content_title %}{% endblock %}
+{% block content %}
+{% if articles %}
+<div id="content">
+  <div id="articles">
+    {% for article in articles|sort(attribute='title') %}
+      <span class="item {{article.state}}">
+        <h3>
+        <a href="{{ SITEURL }}/{{ article.url}}">{{ article.title|capitalize }}</a>
+        </h3>
+        {{article.short|capitalize}}
+      </span>
+    {% endfor %}
+  </div>
+</div>
+{% else %}
+{% endif %}
+{% endblock content %}

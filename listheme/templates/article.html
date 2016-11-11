@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title|striptags }}{% endblock %}
+{% block content %}
+<div id="content" class="body">
+  <div class="item expanded {{ article.state }}">
+    <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
+    <div class="article_body">{{ article.content }}</div>
+  </div>
+  {% if DISQUS_SITENAME %}
+  <div class="comments">
+    <h2>Comments !</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_identifier = "{{ article.url }}";
+      (function () {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = 'https://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
+        document.getElementById('content').appendChild(dsq);
+      })();
+    </script>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}
