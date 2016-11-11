@@ -24,20 +24,23 @@
   <h1 id="site_title"><a href="http://granitosaurus.github.io/canrattyeat/index.html">Can Ratty Eat</a></h1>
   <em id="site_subtitle">What can and cannot your ratty eat?</em>
 </header><!-- /#banner -->
-<div id="content" class="tags_fix">
+<div class="all">
+<div class="content tags_fix">
   <a class="page" href="/tags.html"> Tags</a>
+  <a class="page" href="/pages/general.html"> General</a>
+  <a class="page" href="/pages/faq.html"> FAQ</a>
 </div>
 <a href="http://github.com/granitosaurus/canrattyeat">
 <img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
 </a>
-<div id="content" class="body">
-  <div class="item expanded bad">
-    <h3><a href="onion.html">Onion</a></h3>
+<div class="body content">
+  <div class="single_item expanded bad">
+    <h3 class="item_title"><a href="onion.html">Onion</a></h3>
     <div class="article_body"><p>Rats will probably not gonna touch it, but nevertheless should be avoided. 
 It might cause anemia and in general upset the stomach.</p></div>
   </div>
   <div class="comments">
-    <h2>Comments !</h2>
+    <h3>Comments !</h3>
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       var disqus_identifier = "onion.html";
@@ -46,12 +49,12 @@ It might cause anemia and in general upset the stomach.</p></div>
         dsq.type = 'text/javascript';
         dsq.async = true;
         dsq.src = 'https://canrattyeat.disqus.com/embed.js';
-        document.getElementById('content').appendChild(dsq);
+        document.getElementsByClassName('comments')[0].appendChild(dsq);
       })();
     </script>
   </div>
 </div>
-
+</div>
 <div id="footer">
   <footer>
     <em>This is just a general recommendation based on community experiences. We are not your veterinarian and we don't
