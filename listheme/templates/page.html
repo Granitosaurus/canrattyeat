@@ -1,10 +1,26 @@
 {% extends "base.html" %}
 {% block title %}{{ page.title }}{% endblock %}
 {% block content %}        
-<section id="content" class="body">    
-    <h1 class="entry-title">{{ page.title }}</h1>
-    {% if PDF_PROCESSOR %}<a href="{{ SITEURL }}/pdf/{{ page.slug }}.pdf">get
-    the pdf</a>{% endif %}
-    {{ page.content }}
-</section>
+<div class="body content">
+    <div class="single_item expanded {{ page.state }}">
+        <h3 class="item_title"><a href="{{ page.url }}">{{ page.title }}</a></h3>
+        <div class="article_body">{{ page.content }}</div>
+    </div>
+    {% if DISQUS_SITENAME %}
+    <div class="comments">
+        <h3>Comments !</h3>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_identifier = "{{ page.url }}";
+            (function () {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = 'https://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
+                document.getElementsByClassName('comments')[0].appendChild(dsq);
+            })();
+        </script>
+    </div>
+    {% endif %}
+</div>
 {% endblock %}

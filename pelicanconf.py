@@ -10,7 +10,10 @@ SITEURL = ''
 GITHUB_URL = 'http://github.com/granitosaurus/canrattyeat'
 MENUITEMS = (
     ('Tags', '/tags.html'),
+    ('General', '/pages/general.html'),
+    ('FAQ', '/pages/faq.html'),
 )
+STATIC_PATHS = ['pages', 'extra/CNAME']
 PATH = 'content'
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
@@ -23,7 +26,6 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-PAGES = []
 DISQUS_SITENAME = "canrattyeat"
 
 # Uncomment following line if you want document-relative URLs when developing

@@ -1,8 +1,6 @@
 Title: Carrot
-Date: 2013-11-06 10:06
+Date: 2016-11-07
 Tags: vegetable
-Category: vegetables
-Slug: carrot
 State: good
 Short: Healthy in almost every form.
 

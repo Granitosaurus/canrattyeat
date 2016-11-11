@@ -1,19 +1,33 @@
 @import "variables.less";
 
 html {
-    color: @text;
-    background: @background;
-    font-size: 1em;
-    line-height: 1.4;
+  color: @text;
+  background: @background;
+  font-size: 1em;
+  line-height: 1.4;
+  text-align: center;
 }
 
-#site_title a{
+div.all {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 60%;
+}
+
+body {
+  margin: auto;
+  width: 100%;
+}
+
+#site_title a {
   color: @text2;
   text-decoration: none;
   text-shadow: 2px 2px 2px @background_highlight;
 }
 
 a.page {
+  margin: 0 10px;
   color: @text2;
   text-decoration: none;
   padding-bottom: 5px;
@@ -21,7 +35,7 @@ a.page {
   text-align: center;
 }
 
-div#tags a:hover{
+div#tags a:hover {
   color: @cyan;
 }
 
@@ -32,27 +46,21 @@ header {
   text-align: center;
 }
 
-div#content, div#footer{
+div.content, div#footer {
   margin-top: 20px;
   text-align: center;
 }
 
-div#disqus_thread{
+div#disqus_thread {
   text-align: center;
 }
 
 div.comments {
-  width: 60%;
   text-align: center;
 }
 
-iframe {
-  width: 60%;
-  min-width: 60% !important;
-}
 
-#articles, #tags{
-  width: 60%;
+#articles, #tags {
   margin: auto;
   padding: 10px;
   display: inline-block;
@@ -76,6 +84,18 @@ div.article_body {
   background: @background_highlight;
   font-size: 14px;
 }
+
+.single_item {
+  vertical-align: top;
+  margin: 0 5px 5px 5px;
+  padding: 10px;
+  text-align: left;
+  border: solid 1px @background_highlight;
+  color: @text2;
+  background: @background_highlight;
+  font-size: 14px;
+}
+
 .tag {
   text-align: center;
   margin: 3px;
@@ -83,7 +103,7 @@ div.article_body {
   min-height: 0;
 }
 
-.item a, .tag a {
+a {
   text-align: center;
   color: @text2;
   text-shadow: 1px 1px 1px @background_highlight;
@@ -94,7 +114,7 @@ a:hover {
   color: @cyan;
 }
 
-.item h3{
+h3.item_title {
   margin: 0 0 10px 0;
   padding: 0;
   text-align: center;
@@ -106,17 +126,18 @@ a:hover {
   min-width: 50%;
 }
 
-.item.good {
+.good {
   border-top: 3px solid #00811e;
 }
 
-.item.bad {
-  border-top: 3px solid #b65b00;
-}
-.item.complex {
-  border-top: 3px solid #c6c972;
+.meta {
+  border-top: 3px solid darkgrey;
 }
 
-a:target {
-  background: red;
+.bad {
+  border-top: 3px solid #b65b00;
+}
+
+.complex {
+  border-top: 3px solid #c6c972;
 }

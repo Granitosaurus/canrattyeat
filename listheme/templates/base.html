@@ -28,9 +28,10 @@
   <h1 id="site_title"><a href="{{ SITEURL }}/index.html">{{ SITENAME }}</a></h1>
   <em id="site_subtitle">{{ SITESUBTITLE }}</em>
 </header><!-- /#banner -->
+<div class="all">
 {% if MENUITEMS %}
-<div id="content" class="tags_fix">
-  {% for name, url in MENUITEMS %}
+<div class="content tags_fix">
+  {% for name, url in MENUITEMS%}
   <a class="page" href="{{ url }}"> {{ name }}</a>
   {% endfor %}
 </div>
@@ -38,7 +39,7 @@
 {% include 'github.html' %}
 {% block content %}
 {% endblock %}
-
+</div>
 {% include 'analytics.html' %}
 <div id="footer">
   <footer>

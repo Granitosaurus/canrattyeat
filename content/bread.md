@@ -1,8 +1,7 @@
 Title: Bread
-Date: 2013-11-06 10:06
-Category: processed
-Slug: bread
+Date: 2016-11-07
+Tags: baked
 State: good
-Short: Good in almost every form, nom nom, very delish
+Short: Good, not much nutritional value.
 
-Testing bread
+Bread fine to serve but doesn't have much nutritional value. It can be used as a medium for other food. Little sandwiches?

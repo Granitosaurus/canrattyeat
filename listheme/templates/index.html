@@ -2,11 +2,11 @@
 {% block content_title %}{% endblock %}
 {% block content %}
 {% if articles %}
-<div id="content">
-  <div id="articles">
+<div class="content">
+  <div class="articles">
     {% for article in articles|sort(attribute='title') %}
       <span class="item {{article.state}}">
-        <h3>
+        <h3 class="item_title">
         <a href="{{ SITEURL }}/{{ article.url}}">{{ article.title|capitalize }}</a>
         </h3>
         {{article.short|capitalize}}
