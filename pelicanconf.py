@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Granitosaurus'
-SITENAME = 'Can Ratty Eat'
-SITESUBTITLE = 'What can and cannot your ratty eat?'
+SITENAME = 'Can Ratty Eat it?'
+SITESUBTITLE = 'A curated list of what can and cannot your pet ratty eat.'
 THEME = 'listheme'
 SITEURL = 'http://localhost:8000'
 GITHUB_URL = 'http://github.com/granitosaurus/canrattyeat'

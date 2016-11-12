@@ -5,6 +5,9 @@
   <div class="single_item">
     <h3 class="item_title"><a href="{{ tags.url }}" title="tags">Tags</a></h3>
     <div class="article_body">
+      <div>
+        List of article tags, click on a tag to use it as a filter.
+      </div>
       {% for tag, articles in tags|sort %}
       <div class="tag">
         <a href="{{ SITEURL }}/{{ tag.url}}">{{ tag }}</a>
