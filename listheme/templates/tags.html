@@ -2,13 +2,15 @@
 {% block content %}
 
 <div class="body content meta">
-  <div id="tags">
-  <div class="article_body">
-    {% for tag, articles in tags %}
-    <div class="tag">
-      <a href="{{ SITEURL }}/{{ tag.url}}">{{ tag }}</a>
+  <div class="single_item">
+    <h3 class="item_title"><a href="{{ tags.url }}" title="tags">Tags</a></h3>
+    <div class="article_body">
+      {% for tag, articles in tags|sort %}
+      <div class="tag">
+        <a href="{{ SITEURL }}/{{ tag.url}}">{{ tag }}</a>
+      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
   </div>
 </div>
 {% endblock %}

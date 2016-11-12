@@ -1,9 +1,8 @@
 Title: Potato
-Date: 2013-11-06 10:06
+Date: 2016-11-07
 Tags: vegetable
-Category: vegetables
-Slug: potato
-State: complex
-Short: okay when boiled
+State: good
+Short: boiled or mashed
 
-Testing potato
+Potato is a great food for humans and rats are no different. 
+Make sure to boil well and if served mashed watch out for mess and keep milk to a minimum, see [milk](/milk.html) 

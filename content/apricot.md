@@ -2,6 +2,8 @@ Title: Apricot
 Date: 2016-11-07
 Tags: fruit
 State: good
-Short: Good and healthy, avoid bone.
+Short: nutritious, avoid bone.
 
-Apricots are good and healthy. There's nothing unusual about this item.
+Apricots have a very nutritious and just a great food for everyone. However
+you should avoid the bone, just like majority of fruit bones, apricot bone
+is poisonous for rats.

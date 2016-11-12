@@ -6,12 +6,12 @@ AUTHOR = 'Granitosaurus'
 SITENAME = 'Can Ratty Eat'
 SITESUBTITLE = 'What can and cannot your ratty eat?'
 THEME = 'listheme'
-SITEURL = ''
+SITEURL = 'http://localhost:8000'
 GITHUB_URL = 'http://github.com/granitosaurus/canrattyeat'
 MENUITEMS = (
     ('Tags', '/tags.html'),
     ('General', '/pages/general.html'),
-    ('FAQ', '/pages/faq.html'),
+    ('Contribute', '/pages/contribute.html'),
 )
 STATIC_PATHS = ['pages', 'extra/CNAME']
 PATH = 'content'
@@ -25,8 +25,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-DISQUS_SITENAME = "canrattyeat"
+DISQUS_SITENAME = ""  # pointless in dev
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

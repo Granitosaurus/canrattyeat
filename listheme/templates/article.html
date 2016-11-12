@@ -3,12 +3,34 @@
 {% block content %}
 <div class="body content">
   <div class="single_item expanded {{ article.state }}">
-    <h3 class="item_title"><a href="{{ article.url }}">{{ article.title }}</a></h3>
-    <div class="article_body">{{ article.content }}</div>
+    <h3 class="item_title"><a href="{{ article.url }}" title="last edit: {{ article.date}}">{{ article.title }}</a></h3>
+    <div class="article_body">
+      {{ article.content }}
+      {% if article.sources %}
+      <div class="sources">
+        {% set sources = article.sources.split(';') %}
+        {% for source in sources %}
+        {% if source %}
+        {% set name, url = source.split(':', 1) %}
+        <div class="source"> {{name}}: <a href="{{url}}">{{url}}</a></div>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+      </div>
+      {% if article.tags %}
+      <div class="article_tags">
+        {% for tag in article.tags%}
+        <div class="tag">
+          <a href="{{ SITEURL }}/{{ tag.url}}">{{ tag }}</a>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
   </div>
   {% if DISQUS_SITENAME %}
   <div class="comments">
-    <h3>Comments !</h3>
+    <h3>Comments</h3>
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       var disqus_identifier = "{{ article.url }}";

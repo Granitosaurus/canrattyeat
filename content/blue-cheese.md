@@ -1,6 +1,6 @@
 Title: Blue Cheese
 Date: 2016-11-07
-Tags: fruit
+Tags: dairy
 State: bad
 Short: The blue mold used in cheese is toxic for ratties.
 

@@ -39,7 +39,7 @@ header {
 }
 div.content,
 div#footer {
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
 }
 div#disqus_thread {
@@ -54,8 +54,12 @@ div.comments {
   padding: 10px;
   display: inline-block;
 }
-div.article_body {
+div.article_body,
+div.article_tags {
   padding: 0 50px;
+}
+div.article_tags div.tag {
+  margin-left: 0;
 }
 .item,
 .tag {
@@ -64,10 +68,9 @@ div.article_body {
   max-width: 200px;
   min-width: 200px;
   min-height: 80px;
-  margin: 0 5px 5px 5px;
+  margin: 10px 5px 5px 5px;
   padding: 10px;
   text-align: left;
-  border: solid 1px #073642;
   color: #93a1a1;
   background: #073642;
   font-size: 14px;
@@ -77,12 +80,12 @@ div.article_body {
   margin: 0 5px 5px 5px;
   padding: 10px;
   text-align: left;
-  border: solid 1px #073642;
   color: #93a1a1;
   background: #073642;
   font-size: 14px;
 }
 .tag {
+  background: #002b36;
   text-align: center;
   margin: 3px;
   min-width: 0;
@@ -97,11 +100,17 @@ a {
 a:hover {
   color: #2aa198;
 }
+h3 {
+  color: #b58900;
+}
+div.article_body a {
+  text-decoration: underline;
+}
 h3.item_title {
   margin: 0 0 10px 0;
   padding: 0;
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
   background: #002b36;
 }
 .expanded {
@@ -118,4 +127,11 @@ h3.item_title {
 }
 .complex {
   border-top: 3px solid #c6c972;
+}
+.sources {
+  margin-top: 20px;
+  border-top: solid 1px;
+}
+.source {
+  font-size: smaller;
 }
